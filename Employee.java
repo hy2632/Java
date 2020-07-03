@@ -3,7 +3,15 @@ import java.io.*;
 public class Employee {
     String name, designation;
     int age;
-    double salary;
+    public double salary;
+
+    //实例变量，私有，子类不可见
+    // private double salary;
+    // 类变量（静态变量），类中，方法之外。可通过ClassName.VariableName访问
+    // public static double salary;
+    // 不随实例变化，类的固定值。
+    public static final String DEPARTMENT = "开发人员";
+
 
     public Employee(String name){
         this.name = name;
