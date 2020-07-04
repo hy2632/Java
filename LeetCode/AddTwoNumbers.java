@@ -1,4 +1,4 @@
-package LC;
+package LeetCode;
 
 import java.util.Arrays;
 import java.math.*;
