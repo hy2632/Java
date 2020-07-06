@@ -1,40 +1,30 @@
-import java.io.*;
-
 public class Employee {
-    String name, designation;
-    int age;
-    public double salary;
-
-    //实例变量，私有，子类不可见
-    // private double salary;
-    // 类变量（静态变量），类中，方法之外。可通过ClassName.VariableName访问
-    // public static double salary;
-    // 不随实例变化，类的固定值。
-    public static final String DEPARTMENT = "开发人员";
-
-
-    public Employee(String name){
-        this.name = name;
+    private String name;
+    private String address;
+    private int number;
+    public Employee(String name, String address, int number) {
+       System.out.println("Employee 构造函数");
+       this.name = name;
+       this.address = address;
+       this.number = number;
     }
-
-    public void empAge(int empAge){
-        // this.age = empAge;
-        age = empAge;
+    public void mailCheck() {
+       System.out.println("邮寄支票给： " + this.name
+        + " " + this.address);
     }
-
-    public void empDesignation(String empDesig){
-        designation = empDesig;
+    public String toString() {
+       return name + " " + address + " " + number;
     }
-
-    public void empSalary(double empSalary){
-        salary = empSalary;
+    public String getName() {
+       return name;
     }
-
-    public void printEmployee(){
-        System.out.println("名字:"+ name );
-        System.out.println("年龄:" + age );
-        System.out.println("职位:" + designation );
-        System.out.println("薪水:" + salary);
+    public String getAddress() {
+       return address;
     }
-}
-
+    public void setAddress(String newAddress) {
+       address = newAddress;
+    }
+    public int getNumber() {
+      return number;
+    }
+ }
