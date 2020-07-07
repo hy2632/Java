@@ -1,6 +1,6 @@
 import java.util.Arrays;
 
-public class youqiongxing{
+public class youqiongxing01_A2{
     public static void main(String[] args){
         int[] hs = Hailstone(27);
         System.out.println(Arrays.toString(hs));
